@@ -1,5 +1,5 @@
-# CS-330-PLP-Kay-Pringle
-> This is the GitHub for Kayla Pringle's CS 330 Programming Language Project, Introduction to JavaScript for Seasoned Programmers
+# Introduction to JavaScript for Seasoned Programmers
+> This is the GitHub for Kayla Pringle's CS 330 Programming Language Project
 
 ![Javascript Logo](https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/250px-Unofficial_JavaScript_logo_2.svg.png)
 
