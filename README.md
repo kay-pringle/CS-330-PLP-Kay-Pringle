@@ -9,9 +9,13 @@ JavaScript is a programming language that was created in May 1995 by Brendan Eic
 
 ## Let's Get Started! 🏃💨
 
-To begin, you must install Javascript to run be able to use it! You can do so by visiting [Node.js](https://nodejs.org/en) and following the instructions to install the language. I reccomend using the 
+To begin, you must install JavaScript to run it. You can do so by visiting [Node.js](https://nodejs.org/en) and following the installation instructions. I think you should use the prebuilt Node.js for your respective system, as the installation wizard is efficient and installs all the additional tools you need! Although there is no recommended programming environment, Visual Studio Code (VS Code) is free, straightforward, widely used as a coding IDE, easily customizable, and I have the most experience using it, so we will be using that one for this tutorial. Now, the caveat is that you must install a Code Runner extension in order to actually run the code in VS Code, as you can create any JavaScript file you'd like, but VS Code does not have built-in support to do so. I suggest using the Code Runner extension with the extension ID found [here](formulahendry.code-runner). I recommend it as it supports a multitude of languages and has a straightforward installation process. I have also linked it [here](https://marketplace.visualstudio.com/items?itemName=formulahendry.code-runner), and it should be the first extension at the top of the list when you search for "Code Runner" in the extensions tab in VS Code. I would suggest that you install it directly in VS Code via the extension ID to avoid any issues. I have included a screenshot below to ensure that you can correctly identify the extension, as I have also been confused about which ones to install for different languages myself. You will then need to shut down VS Code entirely, close any open files, and open a new window for the extension to function correctly. Now you are ready to start programming! 
 
-![]
+#### Screenshot of Recommended Code Runner:
+![Code Runner Screenshot](https://github.com/kay-pringle/CS-330-PLP-Kay-Pringle/blob/94a976b7b9182109812430fa4441a67bc658dd0d/Code%20Runner%20Screenshot.png)
+
+## Writing Comments
+
 
 
 [^1]: https://www.geeksforgeeks.org/javascript/history-of-javascript/#
