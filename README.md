@@ -40,6 +40,13 @@ console.log("Hello World!");
 ````
 Please note that, like other messages you may be familiar with, all lines must end with a semicolon. Now, let's get a bit deeper into JavaScript as a whole!
 
+## Data Types and Naming Conventions
+
+Now it's time to move on to naming conventions and the various data types that Javascript has. 
+
+### Naming Conventions
+Similar to other languages, when it comes to naming conventions camelCase for variables and functions, ensuring we keep the first letter lowercase of the name 
+
 [^1]: https://www.geeksforgeeks.org/javascript/history-of-javascript/#
 [^2]: https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Scripting/What_is_JavaScript
 [^3]: https://www.geeksforgeeks.org/javascript/javascript-tutorial/
