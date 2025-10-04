@@ -42,10 +42,32 @@ Please note that, like other messages you may be familiar with, all lines must e
 
 ## Data Types and Naming Conventions
 
-Now it's time to move on to naming conventions and the various data types that Javascript has. 
+Now it's time to move on to naming conventions and the various data types that JavaScript has. We will cover a lot in this section, so please buckle up!
 
 ### Naming Conventions
-Similar to other languages, when it comes to naming conventions camelCase for variables and functions, ensuring we keep the first letter lowercase of the name 
+First and foremost, here is an example of the variety of variables with correct syntax to serve as a reference as we go along to explore the various datatypes and naming conventions:
+
+````
+var xNumber = 5;
+const tNumber = 7;
+let yNumber = 2.2;
+let z = 75;
+z = 80;
+let myGoal = " to teach"
+let isTeaching = true;
+let newArray = [1, 2, 3]
+const theMap = new Map();
+````
+
+I'm aware this is a lot, so let's break all of this down! Similar to other languages, when it comes to naming conventions for variables, camelCase is the the way to go, ensuring that the first letter of the name is lowercase, and allowing the use of numbers, underscores, and uppercase letters following the lowercase letter. 
+
+Now, before doing so, it is important to note there are several reserved words that should be used when declaring a variable. These include var, let, and const. The keyword "var" is used to declare a variable in a global scope, meaning that if one wanted to re-assign a value to that variable, one could do so at a later time, but is less common in relation to the word "let", which has become more standardized in practice. 
+
+The main two keywords you will see is "let" and "const". One would use "let" if you wanted a variable that could change values, as seen in the ` z ` variable listed above. 
+
+
+
+
 
 [^1]: https://www.geeksforgeeks.org/javascript/history-of-javascript/#
 [^2]: https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Scripting/What_is_JavaScript
