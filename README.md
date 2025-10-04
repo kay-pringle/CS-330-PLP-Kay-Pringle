@@ -61,9 +61,37 @@ const theMap = new Map();
 
 I'm aware this is a lot, so let's break all of this down! Similar to other languages, when it comes to naming conventions for variables, camelCase is the the way to go, ensuring that the first letter of the name is lowercase, and allowing the use of numbers, underscores, and uppercase letters following the lowercase letter. 
 
-Now, before doing so, it is important to note there are several reserved words that should be used when declaring a variable. These include var, let, and const. The keyword "var" is used to declare a variable in a global scope, meaning that if one wanted to re-assign a value to that variable, one could do so at a later time, but is less common in relation to the word "let", which has become more standardized in practice. 
+Now, before doing creating data types in JavaScript, it is important to note there are several reserved words that should be used when declaring a variable. These include var, let, and const. The keyword "var" seen in ` xNumber ` is used to declare a variable in a global scope, meaning that if one wanted to re-assign a value to that variable, one could do so at a later time, but is less common in relation to the word "let", which has become more standardized in practice. 
 
-The main two keywords you will see is "let" and "const". One would use "let" if you wanted a variable that could change values, as seen in the ` z ` variable listed above. 
+The main two keywords when naming a variable you will see is "let" and "const". One would use the keyword "let" at the beginning of a variable declaration if you wanted a variable that could change values, as seen in the ` z ` variable listed above. When you want an unchanging values such as the ` tNumber `, you would use the word "const" at the beginning of the variable declaration. 
+
+Now, to make things a bit easier, we are going to run through some discussion questions to help give as much clear information about Javascript as possible!
+ 
+#### 1. Does your language have keywords or reserved words? How many?  
+
+Javascript has numerous keywords, with the exact amount being highly debatable as there are words that are known as future keywords, which do not have current functions but may in the future so they are unable to be used as identifiers. The approximate number of current active words is approximately 39 [6^].
+
+#### 2. What are the naming requirements for variables in your language?   What about naming conventions?  Are those enforced by the compiler/interpreter, or just standards in the community? 
+#### 3. Is your language statically or dynamically typed? 
+#### 4. Strongly typed or weakly typed? 
+#### 5. Explicitly typed or implicitly typed?  
+#### 6. Are some variables mutable while others are immutable?  
+#### 7. What are the operators available for each data type?  
+#### 8. Are mixed type operations allowed? If so, how are they accommodated?  
+#### 9. At what point are identifier names and operator symbols bound in your language? For example if you declare a (variable, class name, function name), when is it bound to the type, address? When are operators (+,*, etc.) bound to their operations?  
+CODING EXAMPLE demonstrating the features above 
+1Adapted with permission from Dr. Amber Stubbs 
+EXAMPLE OF (one) ILLUSTRATIVE EXAMPLE:  
+If you put this line (or something similar) in a program and try to print x, what does it do?   
+x = "5" + 6 
+If it doesn't compile, why?  Is there something you can do to make it compile? 
+#### 10. Describe the limitations (or lack thereof) of your programming language as they relate to the 
+coding example portion of the assignment (adding ints and floats, storing different types in lists, 
+converting between data types).  Are there other restrictions or pitfalls that the documentation 
+mentions that you need to be aware of? 
+#### 11. Are there built-in complex data types that are commonly used in your language? (hint: they’d probably appear fairly early in the documentation if so)
+
+
 
 
 
@@ -74,3 +102,4 @@ The main two keywords you will see is "let" and "const". One would use "let" if 
 [^3]: https://www.geeksforgeeks.org/javascript/javascript-tutorial/
 [^4]: https://www.w3schools.com/js/default.asp
 [5^]: https://exploringjs.com/js/book/index.html
+[6^]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Lexical_grammar#keywords
