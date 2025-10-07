@@ -45,8 +45,9 @@ Please note that, like other messages you may be familiar with, all lines must e
 Now it's time to move on to naming conventions and the various data types that JavaScript has. We will cover a lot in this section, so please buckle up!
 
 ### Naming Conventions
-First and foremost, here is an example of the variety of variables with correct syntax to serve as a reference as we go along to explore the various datatypes and naming conventions:
+First and foremost, here is an example of the variety of variables with correct syntax to serve as a reference as we go along to explore the various datatypes and naming conventions in the below coding example:
 
+### Coding Example 1
 ````
 var xNumber = 5;
 const tNumber = 7;
@@ -55,11 +56,13 @@ let z = 75;
 z = 80;
 let myGoal = " to teach"
 let isTeaching = true;
-let newArray = [1, 2, 3]
+let newArray = [1, "two" , 3]
 const theMap = new Map();
+k = true + 1
+
 ````
 
-I'm aware this is a lot, so let's break all of this down! Similar to other languages, when it comes to naming conventions for variables, camelCase is the the way to go, ensuring that the first letter of the name is lowercase, and allowing the use of numbers, underscores, and uppercase letters following the lowercase letter. 
+I'm aware this is a lot, so let's break all of this down! Similar to other languages, when it comes to naming conventions for variables, camelCase is the the way to go, not mandated by the compiler but more adopted by the commmunity. You should ensure that the first letter of the name is lowercase, and allowing the use of numbers, underscores, and uppercase letters following the lowercase letter. 
 
 Now, before doing creating data types in JavaScript, it is important to note there are several reserved words that should be used when declaring a variable. These include var, let, and const. The keyword "var" seen in ` xNumber ` is used to declare a variable in a global scope, meaning that if one wanted to re-assign a value to that variable, one could do so at a later time, but is less common in relation to the word "let", which has become more standardized in practice. 
 
@@ -69,26 +72,53 @@ Now, to make things a bit easier, we are going to run through some discussion qu
  
 #### 1. Does your language have keywords or reserved words? How many?  
 
-Javascript has numerous keywords, with the exact amount being highly debatable as there are words that are known as future keywords, which do not have current functions but may in the future so they are unable to be used as identifiers. The approximate number of current active words is approximately 39 [6^].
+Javascript has numerous keywords, with the exact amount being highly debatable as there are words that are known as future keywords, which do not have current functions but may in the future so they are unable to be used as identifiers. The approximate number of current active words is approximately 39 [^6].
 
-#### 2. What are the naming requirements for variables in your language?   What about naming conventions?  Are those enforced by the compiler/interpreter, or just standards in the community? 
-#### 3. Is your language statically or dynamically typed? 
-#### 4. Strongly typed or weakly typed? 
-#### 5. Explicitly typed or implicitly typed?  
-#### 6. Are some variables mutable while others are immutable?  
-#### 7. What are the operators available for each data type?  
-#### 8. Are mixed type operations allowed? If so, how are they accommodated?  
+#### 3. Is your language statically or dynamically typed; Strongly typed or weakly typed; Explicitly typed or implicitly typed? 
+
+Javascript is a weakly, dynamically, and implicily typed language as you don't have to list a declared type for variables and variables are able to change quickly as type is not checked until runtime.
+
+#### 6. Are some variables mutable while others are immutable? 
+
+Primitive varaibles and strings in Javascript are immutable as they can only be reassigned, not changed or added [^7]. However, with objects, they are able to be changed and are therefore mutable.
+
+#### 7. What are the operators available for each data type? 
+
+For each data type, the operators is as follows:
+
+Numbers: ```` + - * / % ** ++ -- ````
+
+Strings: ```` + (concatenation), template literals `Hello ${name}````
+
+Booleans: ```` && || ! ````
+
+Objects/arrays: ```` property access (obj.key, arr[0]), spread/rest (...) ````
+
+To summarize, there are Arithmetic Operators, String concatenation Operators, Assignment Operators, Comparison Operators, and Logical Operators [^8].
+
+#### 8. Are mixed type operations allowed? If so, how are they accommodated? 
+
+This and the following question are tied together so it will be answered below.
+
 #### 9. At what point are identifier names and operator symbols bound in your language? For example if you declare a (variable, class name, function name), when is it bound to the type, address? When are operators (+,*, etc.) bound to their operations?  
-CODING EXAMPLE demonstrating the features above 
-1Adapted with permission from Dr. Amber Stubbs 
+
 EXAMPLE OF (one) ILLUSTRATIVE EXAMPLE:  
-If you put this line (or something similar) in a program and try to print x, what does it do?   
-x = "5" + 6 
-If it doesn't compile, why?  Is there something you can do to make it compile? 
-#### 10. Describe the limitations (or lack thereof) of your programming language as they relate to the 
-coding example portion of the assignment (adding ints and floats, storing different types in lists, 
-converting between data types).  Are there other restrictions or pitfalls that the documentation 
-mentions that you need to be aware of? 
+If you put this line (or something similar) in a program and try to print x, what does it do? 
+```` x = "5" + 6 ```` 
+````x = "5" - 2 ````
+
+Identifier names (variables, functions) are bound at run time. However, operators are bound at language definition time. The above example is a mixted type operation which we can use to demonstrate this point. When you do the above first operation, you would get the result "56", with x being converted to a string. However, when you do the second operation, the string would be converted to the number 4 due to when the operators are bound. The + sign is special as it's made for both string concatenation, so in the scenarios of addition will be overtaken by converting to string.
+
+#### 10. Describe the limitations (or lack thereof) of your programming language as they relate to the Are there other restrictions or pitfalls that the documentation mentions that you need to be aware of? 
+
+Javascript is able to mix types as seen in the coding example 1, however there will be areas that can cause some confusion. We already know about string concatenation, but there is also boolean addition, arrays that can hold mixed types and data type conversion that can be implicit.
+
+Data type implicit example:
+
+``` Number("826") = 826```
+````Number ("826jkl") = error ````
+
+
 #### 11. Are there built-in complex data types that are commonly used in your language? (hint: they’d probably appear fairly early in the documentation if so)
 
 
@@ -101,5 +131,7 @@ mentions that you need to be aware of?
 [^2]: https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Scripting/What_is_JavaScript
 [^3]: https://www.geeksforgeeks.org/javascript/javascript-tutorial/
 [^4]: https://www.w3schools.com/js/default.asp
-[5^]: https://exploringjs.com/js/book/index.html
-[6^]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Lexical_grammar#keywords
+[^5]: https://exploringjs.com/js/book/index.html
+[^6]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Lexical_grammar#keywords
+[^7]: https://www.codementor.io/@manik488/mutability-vs-immutability-in-javascript-1g9hwoeddd
+[^8]: https://www.w3schools.com/js/js_operators.asp
